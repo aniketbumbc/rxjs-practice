@@ -39,11 +39,9 @@ export class PromiseComponent implements OnInit {
         this.promiseVal = e;
       });
   }
-
   dellLaptop() {
     return false;
   }
-
   hpLaptop() {
     return false;
   }
