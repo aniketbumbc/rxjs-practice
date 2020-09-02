@@ -91,10 +91,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         },
         "lint": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "RxjsLearn"
+    }
+  },
+  "defaultProject": "RxjsLearn",
+  "cli": {
+    "analytics": "1bb5a61d-41a6-4b75-ae92-af55c4faf76e"
+  }
 }
