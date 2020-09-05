@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="my-3">
+      <h2>Pluck Operator</h2>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">Pluck Table-3</div>
+            <br>
+       
+            <ul id="elContainer" >
+                <li *ngFor = 'let ele of data'>{{ele}}</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Pluck Table-1</div>
+              <ul id="elContainer-1"></ul>
+              <li *ngFor = 'let ele of data2'>{{ele}}</li>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Pluck Object Data</div>
+              <ul id="elContainer-2"></ul>
+            </div>
+          </div>
+        </div>
+    </div>

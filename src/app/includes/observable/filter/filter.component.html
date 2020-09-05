@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="my-3">
+      <h2>Filter Operator</h2>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">Filter Length</div>
+            <br>
+            <li *ngFor = "let ele of data">{{ele.name}}</li>
+            <ul id="elContainer" >
+               
+            </ul>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Filter gender</div>
+              <ul id="elContainer-1"></ul>
+              <li *ngFor = "let ele of data2">{{ele.name}}</li>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Filter data</div>
+              <ul id="elContainer-2"></ul>
+              <li *ngFor = "let ele of data3">{{ele.name}}</li>
+            </div>
+          </div>
+        </div>
+    </div>

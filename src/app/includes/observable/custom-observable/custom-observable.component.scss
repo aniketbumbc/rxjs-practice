@@ -1,0 +1,15 @@
+ul.error{
+    color:red;
+    background-color: beige;
+    border-color: blueviolet;
+}
+
+ul.done{
+    color:rgb(140, 212, 140);
+    background-color: rgb(236, 232, 232);
+}
+
+
+
+
+// techStatus == 'done' ? '-done' : techStatus == '-error' ? 'error' : ''
