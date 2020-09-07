@@ -11,6 +11,7 @@ import { CustomObservableComponent } from './includes/observable/custom-observab
 import { MapoperatorComponent } from './includes/observable/mapoperator/mapoperator.component';
 import { PluckoptComponent } from './includes/observable/pluckopt/pluckopt.component';
 import { FilterComponent } from './includes/observable/filter/filter.component';
+import { SubjectComponent } from './includes/observable/subject/subject.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
    {path:'mapotpr',component:MapoperatorComponent},
    {path:'pluck',component:PluckoptComponent},
    {path:'filter',component:FilterComponent},
+   {path:'subject',component:SubjectComponent},
   ] },
   { path: '**', redirectTo: 'promise' },
 ];

@@ -15,6 +15,10 @@ import { CustomObservableComponent } from './includes/observable/custom-observab
 import { MapoperatorComponent } from './includes/observable/mapoperator/mapoperator.component';
 import { PluckoptComponent } from './includes/observable/pluckopt/pluckopt.component';
 import { FilterComponent } from './includes/observable/filter/filter.component';
+import { SubjectComponent } from './includes/observable/subject/subject.component';
+import { Comp1Component } from './coms/comp1/comp1.component';
+import { Comp2Component } from './coms/comp2/comp2.component';
+import { Comp3Component } from './coms/comp3/comp3.component';
 
 
 @NgModule({
@@ -31,7 +35,11 @@ import { FilterComponent } from './includes/observable/filter/filter.component';
     CustomObservableComponent,
     MapoperatorComponent,
     PluckoptComponent,
-    FilterComponent
+    FilterComponent,
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component
   ],
   imports: [
     BrowserModule,
