@@ -12,6 +12,10 @@ import { MapoperatorComponent } from './includes/observable/mapoperator/mapopera
 import { PluckoptComponent } from './includes/observable/pluckopt/pluckopt.component';
 import { FilterComponent } from './includes/observable/filter/filter.component';
 import { SubjectComponent } from './includes/observable/subject/subject.component';
+import { ReplaySubjectComponent } from './includes/observable/replay-subject/replay-subject.component';
+import { TapComponent } from './includes/observable/tap/tap.component';
+import { TakeComponent } from './includes/observable/take/take.component';
+
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -26,6 +30,9 @@ const routes: Routes = [
    {path:'pluck',component:PluckoptComponent},
    {path:'filter',component:FilterComponent},
    {path:'subject',component:SubjectComponent},
+   {path:'reaplay-subject',component:ReplaySubjectComponent},
+   {path:'tap',component:TapComponent},
+   {path:'take',component:TakeComponent},
   ] },
   { path: '**', redirectTo: 'promise' },
 ];

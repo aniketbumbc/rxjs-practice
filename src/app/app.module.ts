@@ -19,6 +19,9 @@ import { SubjectComponent } from './includes/observable/subject/subject.componen
 import { Comp1Component } from './coms/comp1/comp1.component';
 import { Comp2Component } from './coms/comp2/comp2.component';
 import { Comp3Component } from './coms/comp3/comp3.component';
+import { ReplaySubjectComponent } from './includes/observable/replay-subject/replay-subject.component';
+import { TapComponent } from './includes/observable/tap/tap.component';
+import { TakeComponent } from './includes/observable/take/take.component';
 
 
 @NgModule({
@@ -39,7 +42,10 @@ import { Comp3Component } from './coms/comp3/comp3.component';
     SubjectComponent,
     Comp1Component,
     Comp2Component,
-    Comp3Component
+    Comp3Component,
+    ReplaySubjectComponent,
+    TapComponent,
+    TakeComponent
   ],
   imports: [
     BrowserModule,

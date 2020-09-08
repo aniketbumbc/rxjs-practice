@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="my-3">
+    <h2>Replay-Subject</h2>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col">
+      <h3>Add video</h3>
+    </div>
+  </div>
+  <hr />
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <input type="text" class="form-control" #video/>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-success" (click)="getData(video.value)">Add Video</button>
+    </div>
+  </div>
+  <hr />
+
+  <div class="row">
+    <div class="col-md-4">
+      <strong>User - 01</strong>
+      <hr />
+      <ul>
+        <li *ngFor="let skill of userList1">
+          <strong>Video: </strong>{{ skill }}
+        </li>
+      </ul>
+      <hr />
+    </div>
+
+    <div class="col-md-4">
+      <strong>User - 02</strong>
+      <hr />
+      <ul>
+        <li *ngFor="let skill of userList2">
+          <strong>Video: </strong>{{ skill }}
+        </li>
+      </ul>
+      <hr />
+      <button class="btn" [ngClass]="subMode2?'btn-danger':'btn-success'" (click) = "getUser2()">{{subMode2?'Unsubcribe':'Subcribe'}}</button>
+    </div>
+
+    <div class="col-md-4">
+      <strong>User - 03</strong>
+      <hr />
+      <ul>
+        <li *ngFor="let skill of userList3">
+          <strong>Video: </strong>{{ skill }}
+        </li>
+      </ul>
+      <hr />
+      <button class="btn" [ngClass]="subMode3?'btn-danger':'btn-success'" (click) = "getUser3()">{{subMode3?'Unsubcribe':'Subcribe'}}</button>
+    </div>
+  </div>
+</div>
