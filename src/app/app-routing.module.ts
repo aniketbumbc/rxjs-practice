@@ -15,6 +15,7 @@ import { SubjectComponent } from './includes/observable/subject/subject.componen
 import { ReplaySubjectComponent } from './includes/observable/replay-subject/replay-subject.component';
 import { TapComponent } from './includes/observable/tap/tap.component';
 import { TakeComponent } from './includes/observable/take/take.component';
+import { RetryComponent } from './includes/observable/retry/retry.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,8 @@ const routes: Routes = [
    {path:'reaplay-subject',component:ReplaySubjectComponent},
    {path:'tap',component:TapComponent},
    {path:'take',component:TakeComponent},
+   {path:'retry',component:RetryComponent},
+
   ] },
   { path: '**', redirectTo: 'promise' },
 ];

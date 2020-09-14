@@ -22,6 +22,8 @@ import { Comp3Component } from './coms/comp3/comp3.component';
 import { ReplaySubjectComponent } from './includes/observable/replay-subject/replay-subject.component';
 import { TapComponent } from './includes/observable/tap/tap.component';
 import { TakeComponent } from './includes/observable/take/take.component';
+import { RetryComponent } from './includes/observable/retry/retry.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -45,11 +47,13 @@ import { TakeComponent } from './includes/observable/take/take.component';
     Comp3Component,
     ReplaySubjectComponent,
     TapComponent,
-    TakeComponent
+    TakeComponent,
+    RetryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
